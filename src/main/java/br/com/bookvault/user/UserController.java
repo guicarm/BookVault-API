@@ -44,7 +44,7 @@ public class UserController {
  
     @Operation(
             summary = "Create user.",
-            description = "Cria um usuário."
+            description = "Cria um usuário no banco."
         )
     @PostMapping
     public ResponseEntity<UserResponse> create(@RequestBody UserRequest userRequest, UriComponentsBuilder uriBuilder){
