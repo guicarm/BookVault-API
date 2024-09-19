@@ -19,9 +19,9 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.extern.slf4j.Slf4j;
 
 @RestController
-@RequestMapping("user")
+@RequestMapping("users")
 @Slf4j
-@Tag(name = "User")
+@Tag(name = "Users")
 public class UserController {
     
     @Autowired
@@ -51,7 +51,7 @@ public class UserController {
         var user = userService.create(userRequest.toModel());
 
         var uri = uriBuilder
-                    .path("/user/{id}")
+                    .path("/users/{id}")
                     .buildAndExpand(user.getId())
                     .toUri();
 
