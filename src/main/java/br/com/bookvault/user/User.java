@@ -17,7 +17,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "t_bv_users")
+@Table(name = "T_BV_USERS")
 public class User {
 
     @Id
