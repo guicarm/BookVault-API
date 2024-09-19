@@ -16,7 +16,8 @@ public class SecurityConfig {
     public SecurityFilterChain config(HttpSecurity http, AuthorizationFilter authorizationFilter) throws Exception {
         http.authorizeHttpRequests(auth -> auth
             .requestMatchers(HttpMethod.POST, "/login").permitAll()
-            .requestMatchers(HttpMethod.POST, "/users").permitAll() 
+            .requestMatchers(HttpMethod.POST, "/users").permitAll()
+            .requestMatchers(HttpMethod.GET, "/users").authenticated()
             //.requestMatchers(HttpMethod.POST, "/book").permitAll()
             .requestMatchers("/docs/**", "/swagger-ui/**", "/v3/api-docs/**").permitAll()
             .anyRequest().authenticated()

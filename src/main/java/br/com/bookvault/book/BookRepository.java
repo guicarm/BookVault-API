@@ -8,7 +8,5 @@
  
 //     Page<Book> findByTitleContainingIgnoreCase(String title, Pageable pageable);
 
-//     Page<Book> findByAuthorContainingIgnoreCase(String author, Pageable pageable);
-
 // }
 

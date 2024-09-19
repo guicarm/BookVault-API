@@ -16,7 +16,7 @@ public class UserService {
     PasswordEncoder passwordEncoder;
 
     // Permite a busca de usuários por nome
-    public List<User> findByUsername(String username){
+    public List<User> findByUsernameContainingIgnoreCase(String username){
         return userRepository.findByUsernameContainingIgnoreCase(username);
     }
 

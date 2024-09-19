@@ -36,8 +36,8 @@ public class UserController {
         description = "Retorna um usuário de acordo com seu username."
     )
     @GetMapping
-    public List<User> findByUsername(@RequestParam String username){
-        return userService.findByUsername(username);
+    public List<User> findByUsernameContainingIgnoreCase(@RequestParam String username){
+        return userService.findByUsernameContainingIgnoreCase(username);
     }
 
  // ========== POST(Criar Usuarios) ============
