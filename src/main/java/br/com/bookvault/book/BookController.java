@@ -22,7 +22,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.extern.slf4j.Slf4j;
 
 @RestController
-@RequestMapping("book")
+@RequestMapping("books")
 @Slf4j
 @Tag(name = "BOOKS")
 public class BookController {
@@ -74,7 +74,7 @@ public class BookController {
         Book book = bookService.create(bookRequest.toModel());
 
         var uri = uriBuilder
-                    .path("/book/{id}")
+                    .path("/books/{id}")
                     .buildAndExpand(book.getId())
                     .toUri();
 
