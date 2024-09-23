@@ -12,7 +12,7 @@ public record BookResponse (
         return new BookResponse(
            book.getId(),
            book.getTitle(),
-           book.getReleaseYear(),
+           book.getReleaseyear(),
            book.getGenre()
         );
     }

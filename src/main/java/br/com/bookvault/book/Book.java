@@ -25,7 +25,7 @@ public class Book {
 
     private String title;
 
-    private int releaseYear;
+    private int releaseyear;
 
     private String genre;
 }

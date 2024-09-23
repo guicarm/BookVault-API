@@ -4,13 +4,13 @@ import br.com.bookvault.book.Book;
 
 public record BookRequest (
     String title,
-    int releaseYear,
+    int releaseyear,
     String genre
 ) {
     public Book toModel() {
         return Book.builder()
             .title(title)
-            .releaseYear(releaseYear)
+            .releaseyear(releaseyear)
             .genre(genre)
             .build();
     }
