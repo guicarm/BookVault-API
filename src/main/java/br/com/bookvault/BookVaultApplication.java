@@ -29,7 +29,7 @@ public class BookVaultApplication {
 	@RequestMapping
 	@ResponseBody
 	public String home(){
-		return "Bem-vindo a sua Book Vault, uma biblioteca online.";
+		return "Bem-vindo a sua Book Vault, sua biblioteca online.";
 	}
 
 }
